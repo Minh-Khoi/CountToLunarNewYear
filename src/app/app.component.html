@@ -1,0 +1,9 @@
+<div class="root" [ngStyle]="{'background-image' : 'linear-gradient(rgba(30, 92, 40, 0.562), rgba(30, 92, 40, 0.562)), url('+gottenText+')'}">
+  <app-today (todayComponentUpdated)="todayComponentUpdated($event)">  </app-today>
+  <div class="countAndAnnounce">
+    <app-count></app-count>
+    <!-- <app-announce></app-announce> -->
+    <app-weather-today></app-weather-today>
+  </div>
+
+</div>

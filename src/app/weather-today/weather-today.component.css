@@ -1,0 +1,53 @@
+.weatherToday{
+  text-align: center;
+  padding-top: 10%;
+  /* padding-bottom:11%; */
+  height: 100%;
+}
+
+.weatherToday h6 span{
+  color: blue;
+  margin-left: 1.2em;
+}
+
+.weatherToday h2{
+  display: inline;
+}
+.weatherToday *{
+  z-index: 1;
+}
+
+.weatherToday img{
+  width: 20%;
+  /* height: 30%; */
+}
+
+.weatherToday > span{
+  position: relative;
+}
+.weatherToday select{
+  vertical-align: text-bottom;
+  background-color: rgba(45, 107, 88, 0.877);
+  border: 0.5px solid white;
+  border-radius:  10px;
+  /* height: 2em; */
+  outline: none;
+  font-weight: 800;
+  font-size: 1.25em;
+  appearance: none;
+  text-align: center;
+  text-align-last: center;
+  padding: 0 15px;
+  max-height: 200px;
+  position: absolute;
+  left: -130px;
+  top: 0%
+  /* text-indent: 20px; */
+  /* width: fit-content; */
+}
+.weatherToday select option{
+  text-align: center;
+}
+/* .weatherToday select::-ms-expand {
+  display: none;
+} */

@@ -1,0 +1,22 @@
+.root{
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  /* background-image: url({{gottenText}}); */
+  background-size: cover;
+  background-position: 0 center;
+  padding: 1.5vh 3vw;
+  padding-bottom: 2vh;
+  display: grid;
+  grid-template: 2.5fr 7.5fr/ auto;
+  grid-gap: 10px;
+}
+.root::before{
+  background-image: linear-gradient(rgba(30, 92, 40, 0.562), rgba(30, 92, 40, 0.562));
+}
+
+.root .countAndAnnounce{
+  display: grid;
+  grid-template: 100%/ 1fr 1fr;
+  grid-gap: 10px;
+}

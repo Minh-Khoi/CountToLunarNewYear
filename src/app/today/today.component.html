@@ -1,0 +1,14 @@
+<div class="today">
+  <h1>Today is: <code>{{todayDisplayer}}</code></h1>
+  <br/>
+  <code >{{memoriedToday.join(", ")}}</code>
+
+  <a [href]="link[i]" target="_blank" *ngFor="let date of memoriedToday; let i = index" [attr.data-index]="i">
+    <button type="button" class="btn btn-default">MORE INFO ({{memoriedToday[i]}})</button>
+  </a>
+
+  <!-- <div class="hiddenDOM">
+    {{hiddenJSON | json}}
+  </div> -->
+
+</div>

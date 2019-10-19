@@ -1,0 +1,17 @@
+<div class="weatherToday">
+  <h2>The weather in </h2> <br>
+  <span>
+    <select name="" id=""  (change)="citySelectingEvent($event)"  onmousedown="if(this.options.length>6){this.size=6;}"  onchange='this.size=0;' onblur="this.size=0;">
+      <option value="" *ngFor="let city of citiesList"  [value]="city.id">{{city.name}}</option>
+    </select>
+  </span>
+  <br>
+  <img [src]="weatherICONLink" alt="" srcset="">
+  <h5>{{weatherData.description || ""}}</h5>
+  <h6 *ngIf="weatherData.description.length >0">temperature: <span>{{weatherData.temperature || ""}} 'C</span></h6>
+  <h6 *ngIf="weatherData.description.length >0">humidity: <span>{{weatherData.humidity || ""}}%</span></h6>
+  <h6 *ngIf="weatherData.description.length >0">pressure: <span>{{weatherData.pressure || ""}} atm</span></h6>
+  <h6 *ngIf="weatherData.description.length >0">wind_speed: <span>{{weatherData.wind_speed || ""}} km/h</span></h6>
+  <!-- <h4> </h4> -->
+  <!-- {{citySelected | json}} -->
+</div>
