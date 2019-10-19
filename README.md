@@ -1,4 +1,4 @@
-NOTE: Install package "date-chinese" (type 'npm i date-chinese' in cmd line) before run project (ng serve -o).
+NOTE: In order to install a few necessary libraries of JS, please type 'npm install' in cmd line before run project (ng serve -o). 
 
 # CountToLunarNewYear
 
