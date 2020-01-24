@@ -1,17 +1,19 @@
-.today{
+.today {
   border: 4px solid rgb(233, 229, 229);
   color: black;
-  text-align:  center;
+  text-align: center;
   padding-bottom: 2em;
   font-size: 20px;
   padding-top: 1.5em;
   background-color: rgba(134, 126, 247, 0.329);
   color: antiquewhite
 }
+
 .today h1 {
   margin-bottom: 0;
 }
-.today code{
+
+.today code {
   background-color: rgb(150, 226, 220);
   color: hsl(332, 94%, 21%);
   font-size: 1em;
@@ -22,12 +24,13 @@
   text-align: center;
   vertical-align: baseline;
 }
-.today h1>code{
+
+.today h1>code {
   padding: 3px 120px;
   /* font-family: digital; */
 }
 
-.today button{
+.today button {
   vertical-align: text-top;
   margin: auto 10px;
   font-size: 0.5em;
@@ -37,9 +40,13 @@
 }
 
 
-.today .hiddenDOM{
-  display:none;
+.today .hiddenDOM {
+  display: none;
 }
 
-
-
+@media (max-width: 1010px) {
+  .today {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+  }
+}

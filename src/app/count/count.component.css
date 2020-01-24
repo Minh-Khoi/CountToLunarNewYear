@@ -1,6 +1,6 @@
-.count{
+.count {
   display: grid;
-  grid-template: 1fr 0.75fr 0.75fr 0.75fr/ 1fr 1fr;
+  /* grid-template: 1fr 0.75fr 0.75fr 0.75fr/ 1fr 1fr; */
   grid-gap: 5px;
   width: 100%;
   height: 100%;
@@ -8,14 +8,19 @@
 
 }
 
-.count> *{
+.count>* {
   border: 1.5px solid blue;
   border-radius: 10px;
   background-color: rgba(32, 221, 42, 0.432);
 }
 
-.count > app-announce {
+.count>app-announce {
   grid-column: 1 / 3;
   background-color: rgba(124, 13, 228, 0.548);
 }
 
+/* @media (max-width: 715px) {
+  .count {
+    font-size: 0.5em;
+  }
+} */

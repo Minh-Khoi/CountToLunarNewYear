@@ -1,4 +1,8 @@
-.root{
+html {
+  background-color: linear-gradient(rgba(30, 92, 40, 0.562), rgba(30, 92, 40, 0.562));
+}
+
+.root {
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -10,12 +14,14 @@
   display: grid;
   grid-template: 2.5fr 7.5fr/ auto;
   grid-gap: 10px;
+  /* font-size: px; */
 }
-.root::before{
+
+.root::before {
   background-image: linear-gradient(rgba(30, 92, 40, 0.562), rgba(30, 92, 40, 0.562));
 }
 
-.root .countAndAnnounce{
+.root .countAndAnnounce {
   display: grid;
   grid-template: 100%/ 1fr 1fr;
   grid-gap: 10px;
