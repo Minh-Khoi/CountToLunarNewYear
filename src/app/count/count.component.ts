@@ -8,22 +8,22 @@ import { CountdownService } from '../count-to-lunar-new-year-eve/countdown.servi
 })
 export class CountComponent implements OnInit {
   countSeconds: number;
-  countMinutes:number;
+  countMinutes: number;
   countHours: number;
-  countDates:number;
+  countDates: number;
   countWeeks: number;
-  countMonth:number;
+  countMonth: number;
 
   constructor() {
-      let self = this;
-      let countdown = new CountdownService();
-      self.countSeconds=(Math.round(countdown.countMiliSeconds()/1000));
-      self.countMinutes=Math.round(self.countSeconds/60)-1;
-      self.countHours=Math.round(self.countSeconds/60/60)-1;
-      self.countDates=Math.round(self.countSeconds/60/60/24)-1;
-      self.countWeeks=Math.round(self.countDates/7);
-      self.countMonth=countdown.countMonths();
-      // console.log(self.countSeconds);
+    let self = this;
+    let countdown = new CountdownService();
+    self.countSeconds = (Math.round(countdown.countMiliSeconds() / 1000));
+    self.countMinutes = Math.round(self.countSeconds / 60);
+    self.countHours = Math.round(self.countSeconds / 60 / 60);
+    self.countDates = Math.round(self.countSeconds / 60 / 60 / 24);
+    self.countWeeks = Math.round(self.countDates / 7);
+    self.countMonth = countdown.countMonths();
+    // console.log(self.countSeconds);
 
   }
 

@@ -17,6 +17,7 @@ import { CountdownService } from './count-to-lunar-new-year-eve/countdown.servic
 import { WeatherTodayComponent } from './weather-today/weather-today.component';
 import { WeatherService } from './weather-service/weather.service';
 import { FormsModule } from '@angular/forms';
+import { PhaohoaComponent } from './phaohoa/phaohoa.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     DateComponent,
     WeekComponent,
     MonthComponent,
-    WeatherTodayComponent
+    WeatherTodayComponent,
+    PhaohoaComponent
   ],
   imports: [
     BrowserModule, FormsModule

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {CountComponent} from '../count.component';
+import { CountComponent } from '../count.component';
 
 @Component({
   selector: 'app-second',
@@ -7,7 +7,7 @@ import {CountComponent} from '../count.component';
   styleUrls: ['./second.component.css']
 })
 export class SecondComponent implements OnInit {
-   countSeconds:number;
+  countSeconds: number;
   demo: any;
 
   constructor() {
@@ -15,11 +15,25 @@ export class SecondComponent implements OnInit {
 
   ngOnInit() {
     let self = this;
-    setInterval(function(){
+    let countPerSecond = setInterval(function () {
       self.demo = new CountComponent();
-      self.countSeconds  = self.demo.countSeconds;
+      self.countSeconds = self.demo.countSeconds;
       // console.log(self.demo.countSeconds);
-    },1000);
+      // if (self.countSeconds == 0) {
+      if (false) {
+        clearInterval(countPerSecond);
+        (<HTMLElement>document.getElementsByClassName('root')[0]).style.display = "none";
+        (<HTMLElement>document.getElementsByClassName('phaohoa')[0]).style.display = "block";
+        (<HTMLAudioElement>document.querySelector('.phaohoa audio')).autoplay = true;
+        setTimeout(() => { window.location.reload(); }, 3 * 60 * 1000);
+
+      }
+      // else if (self.countSeconds == 5040) {
+      //   (<HTMLElement>document.getElementsByClassName('root')[0]).style.display = "block";
+      //   (<HTMLElement>document.getElementsByClassName('phaohoa')[0]).style.display = "none";
+
+      // }
+    }, 1000);
 
   }
 
